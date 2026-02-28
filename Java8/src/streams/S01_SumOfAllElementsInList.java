@@ -9,5 +9,10 @@ public class S01_SumOfAllElementsInList {
                 .mapToInt(Integer::intValue)
                 .sum();
         System.out.println("The sum is : " + sum);
+
+        int sum1 = numbers.stream()
+                .mapToInt(n -> n.intValue())
+                .sum();
+        System.out.println("The sum is : " + sum1);
     }
 }
